@@ -1,4 +1,4 @@
-#Build Your Own Pizza Website
+# Build Your Own Pizza Website
 
 #### November 2nd, 2018
 
@@ -27,7 +27,7 @@ The following expectations were used to hand-test the project.
 - [x] A user can choose the toppings on the pizza they would like to order.
     * Input: Choose your topping: Black Olives, Artichokes, Spinach, Ricotta Cheese.
     * Output: Artichokes.      
-- [ ] A user will be shown the cost of their pizza with their specifications.      
+- [x] A user will be shown the cost of their pizza with their specifications.      
     * Input: An 18" pizza with artichokes.
     * Output: Your pizza will cost $20.
 
