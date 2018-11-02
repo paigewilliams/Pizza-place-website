@@ -30,11 +30,14 @@ var order = new Order();
 function displayToppings(pizza){
   debugger
   var htmlForToppingList = "";
-  pizza.toppings.forEach(function(topping) {
-    htmlForToppingList += "<li>" + pizza.toppings + "</li>";
+  pizza.forEach(function(topping) {
+    htmlForToppingList += "<li>" + topping + "</li>";
   });
   $("#toppings").html(htmlForToppingList);
 }
+
+
+
 function addPizza(size, toppings){
   order.orderPizza(size, toppings);
   order.pizzas[0].calcCost(order.pizzas[0].size);
@@ -61,6 +64,6 @@ $(document).ready(function(){
     })
 
     addPizza(pizzaSize, toppingsSelected);
-    displayToppings(order.pizzas[0]);
+    displayToppings(order.pizzas[0].toppings[0]);
     })
   })
