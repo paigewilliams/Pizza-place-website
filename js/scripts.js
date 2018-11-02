@@ -21,48 +21,6 @@ Pizza.prototype.calcCost = function(size) {
   var costOfPizza = this.size * (1.25) + this.toppings[0].length
   this.cost.push(costOfPizza);
 
-  // if (this.size === 10){
-  //   if (this.toppings[0].length > 3 ){
-  //     this.cost.push("$16");
-  //     }
-  //   if (this.toppings[0].length === 3 ){
-  //     this.cost.push("$14");
-  //     }
-  //   if (this.toppings[0].length === 2 ){
-  //     this.cost.push("$13");
-  //     }
-  //   if (this.toppings[0].length === 1){
-  //     this.cost.push("$12");
-  //     }
-  // }
-  // if (this.size === 14){
-  //   if (this.toppings[0].length > 3 ){
-  //     this.cost.push("$18");
-  //     }
-  //   if (this.toppings[0].length === 3 ){
-  //     this.cost.push("$16");
-  //     }
-  //   if (this.toppings[0].length === 2 ){
-  //     this.cost.push("$15");
-  //     }
-  //   if (this.toppings[0].length === 1){
-  //     this.cost.push("$14");
-  //     }
-  // }
-  // if (this.size === 18){
-  //   if (this.toppings[0].length > 3 ){
-  //     this.cost.push("$20");
-  //     }
-  //   if (this.toppings[0].length === 3 ){
-  //     this.cost.push("$18");
-  //     }
-  //   if (this.toppings[0].length === 2 ){
-  //     this.cost.push("$17");
-  //     }
-  //   if (this.toppings[0].length === 1){
-  //     this.cost.push("$16");
-  //     }
-  // }
 }
 
 //User Interface Logic
@@ -76,31 +34,18 @@ function addPizza(size, toppings){
   $(".display-order").show();
 
   $(".size").html(order.pizzas[0].size);
-  $("#toppings").append(order.pizzas[0].toppings[0] + "</br>");
   $(".cost").html(order.pizzas[0].cost[0]);
+
 }
-  // function displayPizzaOrder(pizzaOrderToDisplay){
-    // var orderDisplayed = $("ul#toppings");
-    // var htmlForToppings = "";
-    //
-    // pizzaOrderToDisplay.pizzas.toppings[0].forEach(function(topping){
-    //   htmlforOrder += "<li"
-    // })
-
-  // }
-
-// function costOfOrder(){
-// }
-
-function AppendToppings(toppings) {
-  var list = document.createElement('ul');
-
-  for(var i = 0; i < toppings.length; i++){
-    var item = document.createElement('li');
+function displayToppings(toppingsToDisplay){
+  var toppingsList = $("ul#toppings");
+  var htmlForToppingList = "";
+  toppingsToDisplay.pizzas.toppings.forEach(function(topping){
+    htmlForToppingList += "<li> " + toppingsToDislay.pizzas.toppings + "</li>";
+  });
+  toppingList.html(htmlforToppingList);
   }
-}
-
-
+  // $("#toppings").html(order.pizzas[0].toppings[0] + "</li>");
 
 
 $(document).ready(function(){
@@ -116,6 +61,8 @@ $(document).ready(function(){
     })
 
     addPizza(pizzaSize, toppingsSelected);
+
+    displayToppings(order);
     // displayPizzaOrder(order)
 
 
