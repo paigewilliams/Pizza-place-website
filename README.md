@@ -6,11 +6,11 @@
 
 ## Description
 
-_You can view the deployed page [here](https://philrmass.github.io/PROJECT)._
+_You can view the deployed page [here](https://paigewilliams.github.io/Pizza-place-website/)._
 
 ## Setup and Installation
 
-* Clone the project from https://github.com/philrmass/PROJECT.git to a local directory
+* Clone the project from https://github.com/paigewilliams/Pizza-place-website.git to a local directory
 * Open index.html in a browser
 
 ## Support and Contact Details
