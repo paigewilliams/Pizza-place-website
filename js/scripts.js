@@ -66,16 +66,17 @@ Pizza.prototype.calcCost = function(size) {
 
 var order = new Order();
 
-// function addPizza(size, toppings){
-//   order.orderPizza(size, toppings)
-//   $(".build-pizza").hide();
-// }
+function addPizza(size, toppings){
+  order.orderPizza(size, toppings)
+  $(".build-pizza").hide();
+}
 
-
+function costOfOrder(){
+  order.pizzas[0].calcCost(order.pizzas[0].size)
+}
 
 $(document).ready(function(){
   var toppingsSelected = [];
-
 
   $(".build-pizza").submit(function(event){
     event.preventDefault();
@@ -85,15 +86,15 @@ $(document).ready(function(){
       var toppingsChecked = $(this).val();
       toppingsSelected.push(toppingsChecked);
     })
-    order.orderPizza(pizzaSize, toppingsSelected)
 
-    order.pizzas[0].calcCost(order.pizzas[0].size)
+    addPizza(pizzaSize, toppingsSelected);
+    costOfOrder();
 
 
-    // addPizza(pizzaSize, toppingsSelected);
-    console.log(toppingsSelected)
-    console.log(pizzaSize);
-    // order.newPizza.prototype.calcCost();
+    // console.log(toppingsSelected)
+    // console.log(pizzaSize);
+
+
 })
 
 
