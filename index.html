@@ -25,16 +25,16 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <p>Meat:</p>
-            <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-            <input type="checkbox" name="topping" value="sausage">Sausage<br>
-            <input type="checkbox" name="topping" value="proscuitto">Proscuitto<br>
+            <h5>Meat:</h5>
+            <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+            <input type="checkbox" name="topping" value="Sausage">Sausage<br>
+            <input type="checkbox" name="topping" value="Proscuitto">Proscuitto<br>
           </div>
           <div class="col-md-6">
-            <p>Veggie</p>
-            <input type="checkbox" name="topping" value="artichoke">Artichoke Hearts<br>
-            <input type="checkbox" name="topping" value="olives">Black Olives<br>
-            <input type="checkbox" name="topping" value="spinach">Spinach<br>
+            <h5>Veggie:</h5>
+            <input type="checkbox" name="topping" value="Artichoke">Artichoke Hearts<br>
+            <input type="checkbox" name="topping" value="Olives">Black Olives<br>
+            <input type="checkbox" name="topping" value="Spinach">Spinach<br>
           </div>
 
             <button type="submit" class="btn btn-danger">Order</button>
@@ -43,9 +43,12 @@
         <div class="row">
           <div class="display-order">
             <h4>Your order:</h4>
-            <p><span class="size"></span>" pizza</p>
-            <p>Toppings:<span class="toppings"></span></p>
-            <p>Total:<span class="cost"></span></p>
+            <p>Size: <span class="size"></span>"</p>
+            <p>Toppings:</p>
+            <span id="toppings">
+
+            </span>
+            <p>Total: $<span class="cost"></span></p>
           </div>
 
         </div>

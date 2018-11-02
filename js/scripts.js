@@ -70,13 +70,38 @@ Pizza.prototype.calcCost = function(size) {
 var order = new Order();
 
 function addPizza(size, toppings){
-  order.orderPizza(size, toppings)
+  order.orderPizza(size, toppings);
+  order.pizzas[0].calcCost(order.pizzas[0].size);
   $(".build-pizza").hide();
+  $(".display-order").show();
+
+  $(".size").html(order.pizzas[0].size);
+  $("#toppings").append(order.pizzas[0].toppings[0] + "</br>");
+  $(".cost").html(order.pizzas[0].cost[0]);
+}
+  // function displayPizzaOrder(pizzaOrderToDisplay){
+    // var orderDisplayed = $("ul#toppings");
+    // var htmlForToppings = "";
+    //
+    // pizzaOrderToDisplay.pizzas.toppings[0].forEach(function(topping){
+    //   htmlforOrder += "<li"
+    // })
+
+  // }
+
+// function costOfOrder(){
+// }
+
+function AppendToppings(toppings) {
+  var list = document.createElement('ul');
+
+  for(var i = 0; i < toppings.length; i++){
+    var item = document.createElement('li');
+  }
 }
 
-function costOfOrder(){
-  order.pizzas[0].calcCost(order.pizzas[0].size)
-}
+
+
 
 $(document).ready(function(){
   var toppingsSelected = [];
@@ -91,7 +116,7 @@ $(document).ready(function(){
     })
 
     addPizza(pizzaSize, toppingsSelected);
-    costOfOrder();
+    // displayPizzaOrder(order)
 
 
     // console.log(toppingsSelected)
