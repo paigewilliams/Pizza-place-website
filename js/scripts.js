@@ -44,7 +44,17 @@ Pizza.prototype.calcCost = function(size) {
 //User Interface Logic
 
 var pizza = new Pizza(["artichoke", "peppers", "spinach"], 10);
-// var pizza2 = new Pizza(["peppers"], 12);
+
 
 pizza.calcCost();
-// pizza2.calcCost();
+
+$(document).ready(function(){
+$(".build-pizza").submit(function(event){
+  event.preventDefault();
+  var pizzaSize = parseInt($("#pizza-size").val());
+  console.log(typeof pizzaSize);
+
+})
+
+
+})
