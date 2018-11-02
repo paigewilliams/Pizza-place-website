@@ -6,6 +6,7 @@
 
 ## Description
 
+This is a website where you can create a custom pizza, with three size options and many topping options. Once you have chosen how you want your pizza, a cost is calculated based on your choices. This is an exercise in using JavaScript constructors and prototypes.
 _You can view the deployed page [here](https://paigewilliams.github.io/Pizza-place-website/)._
 
 ## Setup and Installation
@@ -43,6 +44,17 @@ This project was created as an independent project for Epicodus, Intro to Progra
 - [x] Required functionality is in place by the 5:00pm Friday deadline.
 - [x] Project is in a polished, portfolio-quality state.
 - [x] Project demonstrates an understanding of this week's concepts. If prompted, you can discuss your code with an instructor using correct terminology.
+
+### Technologies used
+1. **Bootstrap and custom CSS**
+2. **JQuery and JavaScript**
+3. **HTML5**
+4. **Atom**
+5. **Command Line**
+6. **GitHub**
+
+### Known Bugs
+No known bugs.
 
 ## Legal
 
