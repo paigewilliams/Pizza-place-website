@@ -22,11 +22,11 @@ If you have any issues or questions, please email me at paw145@humboldt.edu
 The following expectations were used to hand-test the project.
 
 - [ ] A user can choose the size of the pizza they would like to order.
-      * Input: Choose one: 10", 14" or 18" pizza.
-      * Output: 18" pizza.
+    * Input: Choose one: 10", 14" or 18" pizza.
+    * Output: 18" pizza.
 - [ ] A user can choose the toppings on the pizza they would like to order.
-      * Input: Choose one topping: Black Olives, Artichokes, Spinach, Ricotta Cheese.
-      * Output: Artichokes.      
+    * Input: Choose one topping: Black Olives, Artichokes, Spinach, Ricotta Cheese.
+    * Output: Artichokes.      
 - [ ] A user will be shown the cost of their pizza with their specifications.      
     * Input: An 18" pizza with artichokes.
     * Output: Your pizza will cost $20.
