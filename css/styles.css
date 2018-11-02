@@ -1,9 +1,6 @@
 .display-order {
   display: none
 }
-#button {
-  margin: 10px;
-}
 .check-box {
   margin-top: 10px;
 }
@@ -12,17 +9,20 @@
   margin: 10px;
   background-color: #f7f7f7;
 }
- h3 {
+h3 {
    margin: 10px;
- }
+}
 .build-pizza {
   margin-top: 10px;
   margin-left: 25px;
   margin-right: 25px;
 }
- .display-order {
+.display-order {
    margin-left: 40px;
- }
+}
 #total {
   font-weight: bold;
+}
+#button {
+  margin: 10px;
 }
