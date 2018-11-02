@@ -19,7 +19,7 @@ function Pizza(size, toppings){
 
 Pizza.prototype.calcCost = function(size) {
   var costOfPizza = this.size * (1.25) + this.toppings[0].length
-  this.cost.push(costOfPizza);
+  this.cost.push(parseInt(costOfPizza));
 
 }
 
@@ -28,7 +28,6 @@ Pizza.prototype.calcCost = function(size) {
 var order = new Order();
 
 function displayToppings(pizza){
-  debugger
   var htmlForToppingList = "";
   pizza.forEach(function(topping) {
     htmlForToppingList += "<li>" + topping + "</li>";
@@ -48,7 +47,7 @@ function addPizza(size, toppings){
   $(".cost").html(order.pizzas[0].cost[0]);
 
 }
-  // $("#toppings").html(order.pizzas[0].toppings[0] + "</li>");
+
 
 
 $(document).ready(function(){
