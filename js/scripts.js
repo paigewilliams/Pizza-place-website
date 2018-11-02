@@ -17,7 +17,7 @@ Pizza.prototype.calcCost = function(size) {
       this.cost.push("$12");
       }
   }
-  if (this.size === 12){
+  if (this.size === 14){
     if (this.toppings.length === 3 ){
       this.cost.push("$16");
       }
