@@ -14,7 +14,6 @@
       <div class="jumbotron">
         <h1>Build Your Own <span class="ec ec-pizza"></span></h1>
       </div>
-
       <form class="build-pizza">
         <div class="row">
           <h3>Choose a size <span class="ec ec-pizza"></span>:</h3>
@@ -36,7 +35,6 @@
             <input class="check-box" type="checkbox" name="topping" value="Canadian Bacon">Canadian Bacon<br>
             <input class="check-box" type="checkbox" name="topping" value="Grilled Chicken">Grilled Chicken<br>
             <input class="check-box" type="checkbox" name="topping" value="Bacon">Bacon<br>
-
           </div>
           <div class="col-md-6">
             <h5>Veggie:</h5>
@@ -50,20 +48,26 @@
           <button type="submit" class="btn btn-danger" id="button">Order <span class="ec ec-pizza"></span></button>
         </div>
       </form>
+      <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your <span class="ec ec-pizza"></span>:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h4>Size: <span class="size"></span>"</h4>
+              <h4>Toppings:</h4>
+              <ul id="toppings">
 
-
-        <div class="row">
-          <div class="display-order">
-            <h2>Your <span class="ec ec-pizza"></span>:</h2>
-            <h4>Size: <span class="size"></span>"</h4>
-            <h4>Toppings:</h4>
-            <ul id="toppings">
-
-            </ul>
-            <h3 id="total">Total: $<span class="cost"></span></h3>
+              </ul>
+              <h3 id="total">Total: $<span class="cost"></span></h3>
+            </div>
           </div>
-
         </div>
       </div>
-    </body>
-  </html>
+    </div>
+  </body>
+</html>

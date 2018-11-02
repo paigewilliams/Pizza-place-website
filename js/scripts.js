@@ -8,7 +8,6 @@ Order.prototype.orderPizza = function (size, toppings){
   this.pizzas.push(newPizza);
 }
 
-
 //Business Logic for pizza
 function Pizza(size, toppings){
   this.size = size,
@@ -35,34 +34,30 @@ function displayToppings(pizza){
   $("#toppings").html(htmlForToppingList);
 }
 
-
-
 function addPizza(size, toppings){
   order.orderPizza(size, toppings);
   order.pizzas[0].calcCost(order.pizzas[0].size);
   $(".build-pizza").hide();
-  $(".display-order").show();
+  $(".modal").show();
 
   $(".size").html(order.pizzas[0].size);
   $(".cost").html(order.pizzas[0].cost[0]);
 
+  $(".close").click(function(){
+    $(".modal").hide();
+  })
 }
-
-
 
 $(document).ready(function(){
   var toppingsSelected = [];
-
   $(".build-pizza").submit(function(event){
     event.preventDefault();
     var pizzaSize = parseInt($("#pizza-size").val());
-
     $("input:checkbox[name=topping]:checked").each(function(){
       var toppingsChecked = $(this).val();
       toppingsSelected.push(toppingsChecked);
     })
-
     addPizza(pizzaSize, toppingsSelected);
     displayToppings(order.pizzas[0].toppings[0]);
-    })
   })
+})
