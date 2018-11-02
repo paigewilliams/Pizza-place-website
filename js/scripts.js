@@ -19,35 +19,44 @@ function Pizza(size, toppings){
 
 Pizza.prototype.calcCost = function(size) {
   if (this.size === 10){
-    if (this.toppings.length === 3 ){
+    if (this.toppings[0].length > 3 ){
+      this.cost.push("$16");
+      }
+    if (this.toppings[0].length === 3 ){
       this.cost.push("$14");
       }
-    if (this.toppings.length === 2 ){
+    if (this.toppings[0].length === 2 ){
       this.cost.push("$13");
       }
-    if (this.toppings.length === 1){
+    if (this.toppings[0].length === 1){
       this.cost.push("$12");
       }
   }
   if (this.size === 14){
-    if (this.toppings.length === 3 ){
+    if (this.toppings[0].length > 3 ){
+      this.cost.push("$18");
+      }
+    if (this.toppings[0].length === 3 ){
       this.cost.push("$16");
       }
-    if (this.toppings.length === 2 ){
+    if (this.toppings[0].length === 2 ){
       this.cost.push("$15");
       }
-    if (this.toppings.length === 1){
+    if (this.toppings[0].length === 1){
       this.cost.push("$14");
       }
   }
   if (this.size === 18){
-    if (this.toppings.length === 3 ){
+    if (this.toppings[0].length > 3 ){
+      this.cost.push("$20");
+      }
+    if (this.toppings[0].length === 3 ){
       this.cost.push("$18");
       }
-    if (this.toppings.length === 2 ){
+    if (this.toppings[0].length === 2 ){
       this.cost.push("$17");
       }
-    if (this.toppings.length === 1){
+    if (this.toppings[0].length === 1){
       this.cost.push("$16");
       }
   }
@@ -77,7 +86,10 @@ $(document).ready(function(){
       toppingsSelected.push(toppingsChecked);
     })
     order.orderPizza(pizzaSize, toppingsSelected)
+
     order.pizzas[0].calcCost(order.pizzas[0].size)
+
+
     // addPizza(pizzaSize, toppingsSelected);
     console.log(toppingsSelected)
     console.log(pizzaSize);
