@@ -45,7 +45,7 @@ This project was created as an independent project for Epicodus, Intro to Progra
 - [x] Project is in a polished, portfolio-quality state.
 - [x] Project demonstrates an understanding of this week's concepts. If prompted, you can discuss your code with an instructor using correct terminology.
 
-### Technologies used
+## Technologies used
 1. **Bootstrap and custom CSS**
 2. **JQuery and JavaScript**
 3. **HTML5**
@@ -53,7 +53,7 @@ This project was created as an independent project for Epicodus, Intro to Progra
 5. **Command Line**
 6. **GitHub**
 
-### Known Bugs
+## Known Bugs
 No known bugs.
 
 ## Legal
